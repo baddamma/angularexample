@@ -1,0 +1,166 @@
+1) What is Angular.js?
+AngularJS is a javascript framework used for creating single web page applications.  
+It allows you to use HTML as your template language and enables you to extend HTML’s syntax to express your application’s components clearly
+------------
+2) Explain what are the key features of Angular.js ?
+The key features of angular.js are
+Scope
+Controller
+Model
+View
+Services
+Data Binding
+Directives
+Filters
+Testable
+--------------
+3) Explain what is scope in Angular.js ?
+Scope refers to the application model, it acts like glue between application controller and the view. 
+ Scopes are arranged in hierarchical structure and impersonate the DOM ( Document Object Model) structure of the application.  
+It can watch expressions and propagate events.
+---------------------
+4) Explain what is services in Angular.js ?
+In angular.js services are the singleton objects or functions that are used for carrying out specific tasks. 
+It holds some business logic and these function can be called as controllers, directive, filters and so on.
+------------
+5) Explain what is Angular Expression? Explain what is key difference between angular expressions and JavaScript expressions?
+Like JavaScript,  Angular expressions are code snippets that are usually placed in binding such as {{ expression }}
+The key difference between the JavaScript expressions and Angular expressions
+Context : In Angular, the expressions are evaluated against a scope object, while the Javascript expressions are evaluated against the global window
+Forgiving: In Angular expression evaluation is forgiving to null and undefined, while in Javascript undefined properties generates TypeError or ReferenceError
+No Control Flow Statements: Loops, conditionals or exceptions cannot be used in an angular expression
+Filters: To format data before displaying it you can use filters
+2014-08-13_16-53-00
+--------------------
+6) With options on page load how you can initialize a select box ?
+You can initialize a select box with options on page load by using ng-init directive
+
+<div ng-controller = “ apps/dashboard/account ” ng-switch
+On = “! ! accounts” ng-init = “ loadData ( ) ”>
+
+7) Explain what are directives ? Mention some of the most commonly used directives in Angular.js application ? 
+
+A directive is something that introduces new syntax, they are like markers on DOM element which attaches a special behavior to it. In any Angular.js application, directives are the most important components.
+
+Some of the commonly used directives are ng-model, ng-App, ng-bind, ng-repeat , ng-show etc.
+
+8) Mention what are the advantages of using Angular.js ?
+
+Angular.js has several advantages in web development.
+
+Angular.js supports MVS pattern
+Can do two ways data binding using Angular.js
+It has per-defined form validations
+It supports both client server communication
+It supports animations
+9) Explain what Angular JS routes does ?
+
+Angular js routes enable you to create different URLs for different content in your application.  Different URLs for different content enables user to bookmark URLs to specific content.  Each such bookmarkable URL in Angular.js is called a route
+
+A value in Angular JS is a simple object.  It can be a number, string or JavaScript object.  Values are typically used as configuration injected into factories, services or controllers. A value should be belong to an Angular.js module.
+
+Injecting a value into an Angular.js controller function is done by adding a parameter with the same name as the value
+
+10)  Explain what is data binding in Angular.js ?
+
+Automatic synchronization of data between the model and view components is referred as data binding in Angular.js.  There are two ways for data binding
+
+Data mining in classical template systems
+Data binding in angular templates
+11)  What makes angular.js better ?
+
+Registering Callbacks: There is no need to register callbacks . This makes your code simple and easy to debug.
+Control HTML DOM programmatically:  All the application that are created using Angular never have to manipulate the DOM although it can be done if it is required
+Transfer data to and from the UI: Angular.js helps to eliminate almost all of the boiler plate like validating the form, displaying validation errors, returning to an internal model and so on which occurs due to flow of marshalling data
+No initilization code: With angular.js you can bootstrap your app easily using services, which auto-injected into your application in Guice like dependency injection style
+12)  Explain what is string interpolation in angular.js ?
+
+
+ 
+In angular.js the compiler during the compilation process matches text and attributes using interpolate service to see if they contains embedded expressions.  As part of normal digest cycle these expressions are updated and registered as watches.
+
+ 
+
+13)  Mention the steps for the compilation process of HTML happens?
+
+Compilation of HTML process occurs in following ways
+
+Using the standard browser API, first the HTML is parsed into DOM
+By using the call to the $compile () method, compilation of the DOM is performed.  The method traverses the DOM and matches the directives.
+Link the template with scope by calling the linking function returned from the previous step
+14)  Explain what is directive and Mention what are the different types of Directive?
+
+During compilation process when specific HTML constructs are encountered a behaviour or function is triggered, this function is referred as directive.  It is executed when the compiler encounters it in the DOM.
+
+Different types of directives are
+
+Element directives
+Attribute directives
+CSS class directives
+Comment directives
+15)  Explain what is linking function and type of linking function?
+
+Link combines the directives with a scope and produce a live view.  For registering DOM listeners as well as updating the DOM, link function is responsible. After the template is cloned it is executed.
+
+Pre-linking function: Pre-linking function is executed before the child elements are linked.  It is not considered as the safe way for DOM transformation.
+Post linking function: Post linking function is executed after the child elements are linked. It is safe to do DOM transformation by post-linking function
+16)  Explain what is injector?
+
+An injector is a service locator.  It is used to retrieve object instances as defined by provider, instantiate types, invoke methods and load modules.  There is a single injector per Angular application, it helps to look up an object instance by its name.
+
+17)  Explain what is the difference between link and compile in angular.js?
+
+Compile function: It is used for template DOM Manipulation and collect all of the directives.
+Link function: It is used for registering DOM listeners as well as instance DOM manipulation. It is executed once the template has been cloned.
+18)  Explain what is factory method in angular.js?
+
+For creating the directive, factory method is used.  It is invoked only once, when compiler matches the directive for the first time.  By using $injector.invoke the factory method is invoked.
+
+19)  Mention what are the styling form that ngModel adds to CSS classes ?
+
+ngModel adds these CSS classes to allow styling of form as well as control
+
+ng- valid
+ng- invalid
+ng-pristine
+ng-dirty
+20)  Mention what are the characteristics of “Scope”?
+
+To observer model mutations scopes provide APIs ($watch)
+To propagate any model changes through the system into the view from outside of the Angular realm
+A scope inherits properties from its parent scope,  while providing access to shared model properties, scopes can be nested to isolate application components
+Scope provides context against which expressions are evaluated
+21)  Explain what is DI (Dependency Injection ) and how an object or function can get a hold of its dependencies ?
+
+DI or Dependency Injection is a software design pattern that deals with how code gets hold of its dependencies.  In order to retrieve elements of the application which is required to be configured when module gets loaded , the operation “config” uses dependency injection.
+
+These are the ways that object uses to hold of its dependencies
+
+Typically using the new operator, dependency can be created
+By referring to a global variable, dependency can be looked up
+Dependency can be passed into where it is required
+22)  Mention what are the advantages of using Angular.js framework ?
+
+Advantages of using Angular.js as framework are
+
+Supports two way data-binding
+Supports MVC pattern
+Support static template and angular template
+Can add custom directive
+Supports REST full services
+Supports form validations
+Support both client and server communication
+Support dependency injection
+Applying Animations
+Event Handlers
+23)  Explain the concept of scope hierarchy?  How many scope can an application have?
+
+Each angular application consist of one root scope but may have several child scopes. As child controllers and some directives create new child scopes, application can have multiple scopes. When new scopes are formed or created they are added as a children of their parent scope. Similar to DOM, they also creates a hierarchical structure.
+
+24)  Explain what is the difference between angular.js and backbone.js?
+
+Angular.js combines the functionalities of most of the 3rd party libraries, it supports individual functionalities required to develop HTML5 Apps.  While Backbone.js do their jobs individually.
+
+25)  Who created Angular JS ?
+
+Intially it was developed by Misko Hevery and Adam Abrons. Currently it is being developed by Google.

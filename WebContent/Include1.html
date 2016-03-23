@@ -1,0 +1,18 @@
+<h3>Users</h3>
+
+<table class="table table-striped eleSpacer" >
+  <thead><tr>
+    <th>Edit</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr></thead>
+  <tbody><tr ng-repeat="user in data">
+    <td>
+      <button class="btn" ng-click="editUser(user.Name);">
+        <span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Edit
+      </button>
+    </td>
+    <td>{{ user.Name }}</td>
+    <td>{{ user.Country }}</td>
+  </tr></tbody>
+</table>

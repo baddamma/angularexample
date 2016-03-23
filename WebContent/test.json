@@ -1,0 +1,62 @@
+{
+            "India": {
+                "Maharashtra": ["Pune", "Mumbai", "Nagpur", "Akola"],
+                "Madhya Pradesh": ["Indore", "Bhopal", "Jabalpur"],
+                "Rajasthan": ["Jaipur", "Ajmer", "Jodhpur"],
+                "Telangana" : ["Hyderabad","Secundrabad","Karimnagar"]
+            },
+            "USA": {
+                "Alabama": ["Montgomery", "Birmingham"],
+                "California": ["Sacramento", "Fremont"],
+                "Illinois": ["Springfield", "Chicago"]
+            },
+            "Australia": {
+                "New South Wales": ["Sydney"],
+                "Victoria": ["Melbourne"]
+            },
+            "India1": {
+                "Maharashtra": ["Pune", "Mumbai", "Nagpur", "Akola"],
+                "Madhya Pradesh": ["Indore", "Bhopal", "Jabalpur"],
+                "Rajasthan": ["Jaipur", "Ajmer", "Jodhpur"],
+                "Telangana" : ["Hyderabad","Secundrabad","Karimnagar"]
+            },
+            "USA1": {
+                "Alabama": ["Montgomery", "Birmingham"],
+                "California": ["Sacramento", "Fremont"],
+                "Illinois": ["Springfield", "Chicago"]
+            },
+            "Australia1": {
+                "New South Wales": ["Sydney"],
+                "Victoria": ["Melbourne"]
+            },
+            "India2": {
+                "Maharashtra": ["Pune", "Mumbai", "Nagpur", "Akola"],
+                "Madhya Pradesh": ["Indore", "Bhopal", "Jabalpur"],
+                "Rajasthan": ["Jaipur", "Ajmer", "Jodhpur"],
+                "Telangana" : ["Hyderabad","Secundrabad","Karimnagar"]
+            },
+            "USA2": {
+                "Alabama": ["Montgomery", "Birmingham"],
+                "California": ["Sacramento", "Fremont"],
+                "Illinois": ["Springfield", "Chicago"]
+            },
+            "Australia2": {
+                "New South Wales": ["Sydney"],
+                "Victoria": ["Melbourne"]
+            },
+            "India3": {
+                "Maharashtra": ["Pune", "Mumbai", "Nagpur", "Akola"],
+                "Madhya Pradesh": ["Indore", "Bhopal", "Jabalpur"],
+                "Rajasthan": ["Jaipur", "Ajmer", "Jodhpur"],
+                "Telangana" : ["Hyderabad","Secundrabad","Karimnagar"]
+            },
+            "USA3": {
+                "Alabama": ["Montgomery", "Birmingham"],
+                "California": ["Sacramento", "Fremont"],
+                "Illinois": ["Springfield", "Chicago"]
+            },
+            "Australia3": {
+                "New South Wales": ["Sydney"],
+                "Victoria": ["Melbourne"]
+            }
+ }
